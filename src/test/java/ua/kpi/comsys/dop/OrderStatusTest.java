@@ -14,7 +14,7 @@ public class OrderStatusTest {
     @Test
     void paidAcceptValidDate() {
         Paid paid = assertDoesNotThrow(() -> new Paid("PAY-1", new BigDecimal("10.50")));
-        assertEquals("PAY-1", paid.paymentId());
+        assertEquals("PAY-1", paid.paymentID());
         assertEquals(new BigDecimal("10.50"), paid.amount());
     }
 

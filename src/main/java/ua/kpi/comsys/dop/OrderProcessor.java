@@ -13,7 +13,7 @@ public class OrderProcessor {
                     Details: Order is currently pending processing.""";
             case Paid paid -> """
                     Order Status: PAID
-                    Details: Payment ID: %s, Amount: $%s""".formatted(paid.paymentId(), paid.amount());
+                    Details: Payment ID: %s, Amount: $%s""".formatted(paid.paymentID(), paid.amount());
             case Shipped shipped -> """
                     Order Status: SHIPPED
                     Details: Tracking Code: %s, Dispatch Date: %s""".formatted(shipped.trackingCode(), shipped.dispatchDate());
